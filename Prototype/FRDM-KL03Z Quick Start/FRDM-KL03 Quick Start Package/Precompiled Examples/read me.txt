@@ -1,0 +1,35 @@
+In folder Precompiled Examples, there provide some pre-compiled S-record images of example projects for use with the MSD 
+Flash Programmer.
+
+# description for each examples
+
+1. hello world
+The Hello World project is a simple demonstration program that uses the 
+KSDK software.  It prints the "Hello World" message to the terminal using the KSDK UART
+drivers.  The purpose of this demo is to show how to use the UART and a simple debugging, golden project.
+
+2. low power demo
+This low power demo application demonstrates different low power modes supported on the Kinetis KL03 chip, such as WAIT, STOP/PSTOP1/PSTOP2, VLPR, VLPW, VLPS, and VLLSx. 
+Follow a sequence to enter/exit each mode, because the functionality available in different power modes is different. 
+The application demonstrates multiple mode entry/exit cases as per the functionality availability. User can measure chip IDD current under low power mode,
+please disable RTC oscillator to get accurate value. 
+
+3.rtc demo
+The RTC Demo project is a simple demonstration program based on the KSDK RTC 
+peripheral driver. It uses the UART driver to show a clock-like application and 
+display hours, minutes, and seconds. and blue LED blinking each 1s .
+
+4.thermistor demo
+The Thermistor demo application demonstrates Thermistor with ADC convert function.
+Initally, the green LED is on to indicate that the Thermistor is working at a normal temperature. <br>
+When the thermistor is heated, the green LED is off and red LED is on.
+If the thermistor is not heated, the green LED is on and the red LED is off.
+
+# Serial terminal configuration
+
+The serial terminal is configured for these settings:
+
+- 9600 bps
+- 8 data bits
+- No parity
+- 1 stop bit
